@@ -1,0 +1,10 @@
+@use '../01-settings/' as *;
+
+p {
+    font-family: 'Marmelad', sans-serif;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: $grid-base;
+    margin-top: $grid-base * 1.5;
+    margin-bottom: $grid-base * 2.5;
+}

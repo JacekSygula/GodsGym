@@ -1,0 +1,434 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Marmelad";
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: "Marmelad", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+@media screen and (min-width: 1640px) {
+  .container {
+    max-width: 1620px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.col {
+  width: 100%;
+  padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .col--md50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col--md33 {
+    flex: 0 0 33.3333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col--md25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .col--lg50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .col--lg33 {
+    flex: 0 0 33.3333%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .col--lg25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 1640px) {
+  .col--xlg50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 1640px) {
+  .col--xlg33 {
+    flex: 0 0 33.3333%;
+  }
+}
+@media screen and (min-width: 1640px) {
+  .col--xlg25 {
+    flex: 0 0 25%;
+  }
+}
+
+.nav__border {
+  font-weight: 500;
+  font-size: 2.2rem;
+  border-radius: 40px;
+  border: 1px solid rgba(49, 255, 3, 0.877);
+}
+@media screen and (min-width: 768px) {
+  .nav__border {
+    border: 1px solid rgba(49, 255, 3, 0.877);
+    display: inline-block;
+    width: 23%;
+    background-color: rgba(0, 0, 0, 0.127);
+  }
+}
+.nav__inside {
+  background-color: rgba(0, 0, 0, 0.127);
+  color: white;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-family: "Marmelad";
+  border-radius: 40px;
+  border: 1px solid rgba(49, 255, 3, 0.877);
+}
+.nav__inside:hover {
+  background-color: rgba(49, 255, 3, 0.877);
+  border-radius: 40px;
+}
+
+.btn {
+  color: white;
+  border: none;
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  text-align: center;
+  width: 200px;
+}
+.btn--grey {
+  background-color: rgb(59, 58, 52);
+}
+.btn--grey:hover {
+  background-color: rgba(49, 255, 3, 0.877);
+}
+.btn--outline {
+  border: none;
+  opacity: 0.9;
+}
+
+.heading--h1 {
+  color: white;
+  font-size: 6rem;
+  font-family: "new gothic style";
+}
+@media screen and (min-width: 768px) {
+  .heading--h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .heading--h1 {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 1640px) {
+  .heading--h1 {
+    font-size: 12rem;
+  }
+}
+.heading--h2 {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  font-family: "new gothic style";
+}
+.heading--h3 {
+  margin-top: 20px;
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 550;
+  font-family: "Marmelad";
+}
+
+.blackout {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+* table {
+  font-size: 1.8rem;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+/* Styl dla nagłówków tabeli */
+th {
+  background-color: rgba(245, 56, 9, 0.9);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  width: 50px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Styl dla komórek danych */
+td {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgba(245, 56, 9, 0.9);
+  padding: 8px;
+  text-align: center;
+}
+
+.form {
+  width: 95%;
+  font-family: "Marmelad";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  .form {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .form {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1640px) {
+  .form {
+    width: 30%;
+  }
+}
+.form__label {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  display: block;
+  font-family: "Marmelad";
+}
+.form__input {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-family: "Marmelad";
+  outline: 0;
+  resize: none;
+}
+.form__input:focus {
+  background-color: rgb(59, 58, 52);
+  color: rgb(255, 255, 255);
+}
+
+.dream {
+  min-height: 60vh;
+  position: relative;
+}
+@keyframes slider {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.dream > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: url("../assets/Animation_1.webp") center/cover;
+  animation: slider 20s ease-in-out infinite 0s;
+}
+.dream > div:nth-of-type(2) {
+  background: url("../assets/Animation_2.webp") center/cover;
+  animation-delay: 5s;
+}
+.dream > div:nth-of-type(3) {
+  background: url("../assets/Animation_3.webp") center/cover;
+  animation-delay: 10s;
+}
+.dream > div:nth-of-type(4) {
+  background: url("../assets/Animation_4.webp") center/cover;
+  animation-delay: 15s;
+}
+
+.site-header {
+  background: url("../assets/Header.webp") center/cover;
+  height: 100vh;
+  position: relative;
+}
+.site-header__blackout {
+  position: absolute;
+}
+.site-header__h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 45%;
+}
+.site-header__nav {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.site-section {
+  min-height: 70vh;
+  padding-top: 3rem;
+}
+.site-section--bg-color {
+  background-color: rgb(59, 58, 52);
+}
+.site-section--bg-color2 {
+  background-color: rgba(49, 255, 3, 0.877);
+}
+
+.site-contact {
+  background: url("../assets/Contact.webp") center/cover;
+  min-height: 85vh;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+.site-contact__blackout {
+  position: absolute;
+}
+.site-contact__h2 {
+  position: absolute;
+  padding-top: 3rem;
+}
+
+.site-footer {
+  height: 15vh;
+  background-color: rgba(245, 56, 9, 0.9);
+  display: flex;
+  border-top: 2px solid black;
+}
+.site-footer__black {
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

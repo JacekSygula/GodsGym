@@ -1,0 +1,35 @@
+@use '../01-settings/' as *;
+
+*
+
+table {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+}
+
+/* Styl dla nagłówków tabeli */
+th {
+    background-color: $color-red;
+    color: $color-white;
+    text-align: center;
+    padding: 10px;
+    width: 50px;
+    border: 1px solid $color-black;
+
+
+}
+
+/* Styl dla komórek danych */
+td {
+    color: $color-white;
+    background-color: $color-black;
+    border: 1px solid $color-red;
+    padding: 8px;
+    text-align: center;
+}
+
+

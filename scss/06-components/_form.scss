@@ -1,0 +1,50 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.form {
+
+    width: 95%;
+    font-family: 'Marmelad';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include medium {
+        width: 60%;
+    }
+
+    @include large {
+        width: 40%;
+    }
+
+    @include xlarge {
+        width: 30%;
+    }
+
+    &__label {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+        display: block;
+        font-family: 'Marmelad';
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 15px;
+        border: 1px solid $color-white;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        font-family: 'Marmelad';
+        outline: 0;
+        resize: none;
+
+        &:focus {
+            background-color: $color-grey;
+            color: $color-white;
+        }
+    }
+    
+}

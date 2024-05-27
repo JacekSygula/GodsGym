@@ -1,0 +1,35 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.nav {
+    
+    &__border {
+        font-weight: 500;
+    font-size: 2.2rem;
+    border-radius: 40px;
+    border: 1px solid $color-green;
+    @include medium {
+        border: 1px solid $color-green;
+        display: inline-block;
+        width: 23%;
+        background-color: rgba(0, 0, 0, 0.127);
+    }
+}
+
+&__inside {
+    background-color: rgba(0, 0, 0, 0.127);
+    color: white;
+    padding: $grid-base;
+    display: block;
+    text-align: center;
+    font-family: 'Marmelad';
+    border-radius: 40px;
+    border: 1px solid $color-green;
+
+    &:hover {
+        background-color: $color-green;
+        border-radius: 40px;
+    }
+}
+
+}

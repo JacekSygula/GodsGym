@@ -1,0 +1,17 @@
+@use '../01-settings/' as *;
+
+.site-contact {
+    background: url('../assets/Contact.webp') center/cover;
+    min-height: 85vh;
+    position: relative;
+    color: $color-white;
+
+    &__blackout {
+        position: absolute;
+    }
+
+    &__h2 {
+        position: absolute;
+        padding-top: 3rem;
+    }
+}

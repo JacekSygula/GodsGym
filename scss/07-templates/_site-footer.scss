@@ -1,0 +1,14 @@
+@use '../01-settings/' as *;
+
+.site-footer {
+    height: 15vh;
+    background-color: $color-red;
+    display: flex;
+    border-top: 2px solid black;
+
+    &__black {
+    height: 10vh;
+    background-color: $color-black;
+    display: flex;
+}
+}
