@@ -6,8 +6,7 @@ table {
     font-size: 1.8rem;
     width: 80%;
     margin: 20px auto;
-    border-collapse: collapse;
-    border: 1px solid black;
+    border: 0px solid black;
     
 }
 
@@ -18,7 +17,9 @@ th {
     text-align: center;
     padding: 10px;
     width: 50px;
-    border: 1px solid $color-black;
+    border: 0px solid $color-black;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 40px;
 
 
 }
@@ -27,7 +28,6 @@ th {
 td {
     color: $color-white;
     background-color: $color-black;
-    border: 1px solid $color-red;
     padding: 8px;
     text-align: center;
 }

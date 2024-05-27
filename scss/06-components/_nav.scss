@@ -4,8 +4,8 @@
 .nav {
     
     &__border {
-        font-weight: 500;
-    font-size: 2.2rem;
+        font-weight: 600;
+    font-size: 2rem;
     border-radius: 40px;
     border: 1px solid $color-green;
     @include medium {
@@ -13,7 +13,16 @@
         display: inline-block;
         width: 23%;
         background-color: rgba(0, 0, 0, 0.127);
+
+
     }
+
+    @include small {
+        display: inline-block;
+        width: 40%;
+        margin-top: 5px;
+    }
+
 }
 
 &__inside {
@@ -22,7 +31,7 @@
     padding: $grid-base;
     display: block;
     text-align: center;
-    font-family: 'Marmelad';
+    font-family: 'Radio+Canada+Big';
     border-radius: 40px;
     border: 1px solid $color-green;
 
